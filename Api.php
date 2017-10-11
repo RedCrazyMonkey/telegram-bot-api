@@ -243,7 +243,15 @@ final class Api
     {
         return $this->request('kickChatMember', $params);
     }
-
+    /**
+     * @param array $params
+     *
+     * @return Response
+     */
+    public function restrictChatMember(array $params)
+    {
+        return $this->request('restrictChatMember', $params);
+    }
     /**
      * @param array $params
      *
